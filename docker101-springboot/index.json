@@ -1,0 +1,48 @@
+{
+  "title": "Docker 101 - Hello World in Java SpringBoot",
+  "description": "Learn Docker with a simple Hello World apps in SpringBoot",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "intro": {
+      "courseData": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Clone the application repository",
+        "text": "step1.md"
+      },
+      {
+        "title": "Install Dependencies",
+        "text": "step2.md"
+      },
+      {
+        "title": "Build and package application",
+        "text": "step3.md"
+      },
+      {
+        "title": "Create Docker Image",
+        "text": "step4.md"
+      },
+      {
+        "title": "Create Docker Container",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal", 
+    "terminals": [
+      {"name": "Terminal 2", "target": "host01"}
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
