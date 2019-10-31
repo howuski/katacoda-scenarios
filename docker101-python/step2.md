@@ -10,7 +10,7 @@ We need to switch over to the directory that contains our files: `cd docker-pyth
 Now is time to create the docker image build: `docker build --tag docker101_python_api .`{{execute T1}}
 >What you just saw to the right is the Docker engine bundling all the necessary software together and creating the docker image.
 
->Now let's take another look. 'docker image list'{{execute T1}}  Notice we now have a docker image named docker101_python_api
+>Now let's take another look. `docker image list`{{execute T1}}  Notice we now have a docker image named docker101_python_api
 
 To view the Docker file: `docker-python-hello-world/Dockerfile`{{open}}
 > The Docker File is a list of detailed instructions on how to build a docker image.
