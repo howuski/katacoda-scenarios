@@ -1,6 +1,6 @@
 {
-  "title": "Docker 101 - Hello World in Python",
-  "description": "Learn Docker with a simple Hello World app in Python Flask",
+  "title": "Docker 101 - Build a container running Python ",
+  "description": "Build a simple docker container",
   "difficulty": "Beginner",
   "time": "30 minutes",
   "details": {
