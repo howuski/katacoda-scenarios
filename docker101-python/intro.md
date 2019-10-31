@@ -1,5 +1,5 @@
 
-In this scenario, you will learn how to create a docker image of a simple _Hello World_ application written in Python, you will then run this docker image as a container. It will explain the essential aspects to build a container from scratch.
+In this scenario, you will learn how to create a docker image of a simple _Hello World_ application written in Python, you will then run this docker image as a container. The demo will explain the essential aspects to build a container from scratch.
 
 Some advantages of a container are:
 
