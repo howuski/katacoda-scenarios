@@ -6,9 +6,13 @@ Let's run our docker image and make it a container, run the following command: `
 
 >Let's break down this command:
 docker -- Letting the computer know we're talking to the docker application
+
 run -- telling the docker to "spin up" a docker image.
+
 publish -- expose a port so other programs can talk to this container
+
 name -- what do you want to name your container so you can find it later.
+
 
 To view the running container: `docker ps`{{execute T2}}
 
