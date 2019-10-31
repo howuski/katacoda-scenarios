@@ -11,19 +11,19 @@ We need to switch over to the directory that contains our files:
 
 `docker image list`{{execute T1}}
   
->Take note that our soon to be created docker101_image is not there - We haven't built it yet!
+>Take note that our docker101_image is not there - We haven't built it yet!
 
-Now it's time to create the docker image: 
+Now it's time to build our docker image:  
 
 `docker build --tag docker101_python_api .`{{execute T1}}
 
 >On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.
 
->Now let's take another look at what's around. 
+>Now that docker is completed. Let's take another look at the docker image store and see what we have. 
 
 `docker image list`{{execute T1}}  
 
->Notice we now have a docker image named docker101_python_api
+>Notice we now have a docker image named docker101_python_api.  We've taken a Hello World application, downloaded to our local machine and created a docker image.  Now it's time to actual run the application.
 
 To view the Docker file: `docker-python-hello-world/Dockerfile`{{open}}
-> The Docker File is a list of detailed instructions on how to build a docker image.
+> The docker file is a list of detailed instructions on how to build a docker image.  This file is used by the docker runtime engine to put everything together.
