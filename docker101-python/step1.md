@@ -1,10 +1,10 @@
 
 First step is to clone the application repository from Github public code repository. 
 
-```
-	An application repository is a server that stores a developers code.  It allows multiple developers to work on the same code without major confusion.
+
+>An application repository is a server that stores a developers code.  It allows multiple developers to work on the same code without major confusion.<
 	
-```	
+	
 
 ## Task
 
