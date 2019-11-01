@@ -1,2 +1,13 @@
+Switch to Terminal 1
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+cd ~/docker-springboot-hello-world/src/main/java/org/docker101/demo/
+
+ls
+
+nano HelloController.java
+
+Change what the website says and save
+
+
+
+

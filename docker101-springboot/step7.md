@@ -1,2 +1,16 @@
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+Build the java jar
+
+cd ~/docker-springboot-hello-world/ && gradle clean build
+
+Java jar has been rebuilt
+
+Now let's put the new jar into another container.  Remember container images are immutable so we're oging to need to build a new container
+
+docker build --tag docker101_springboot_api_v2 .
+
+docker run --publish 8080:8080 --name katacoda_test_container docker101_springboot_api_v2
+
+Switch to T2
+
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
