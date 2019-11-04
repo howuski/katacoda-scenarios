@@ -15,6 +15,12 @@ Looks like a pretty standard version of Linux.  Let's put a unique file on root.
 
 Myfile is now present on the host machine's file system.
 
+Also look at the processes running on the host machine:
+
+`ps`{{execute T2}}
+
+>Take note of the PIDs and applications running on the host system.
+
 So now let's see what's on the file system within the container:
 
 `docker exec -it katacoda_test_container ash`{{execute T2}}
@@ -27,10 +33,18 @@ Go to the root of the file system and list the contents:
 
 `ls`{{execute T2}}
 
-Notice our myfile file is not present.  The container's file system is separate from the system host.
+Notice our myfile file is not present.  The container's file system is separate from the system host.  
 
 >An important concept of containers is that the container and data written to that container is ephemeral.  Any data in that container is lost when the container is deleted.<
-So to review what just happened -  You listed the root file directories on the machine.  Then with the docker exec command entered into the container and listed the root directories present in the container.  This demonstrates that the container is separate from the host machine.
 
+Let's look at the processes:
 
+`ps`{{execute T2}}
 
+>Totally isolated PIDs and processes running in the container.<
+
+Exit from the container:
+
+`exit`{{execute T2}}
+
+So in review -  You listed the root file directories on the host machine and compared them to the root directories of the container confirming they were isolated from each other.  You also looked at the processes of the container and host and noted the PID's and processes were separate. 
