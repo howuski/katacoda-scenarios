@@ -1,15 +1,17 @@
 
-Now we have to rebuild the java jar to incorporate the changes we made:
+You've rebuilt the jar now it's time to put the new jar file into the docker image.
 
-`cd ~/docker-springboot-hello-world/ && gradle clean build`{{execute T1}}
-
-The jar has been rebuilt now let's put it in a container.
-
-``` Remember docker images are immutable so if we make any new changes we create a new docker image. 
 
 As you click on the docker build command notice we're going to tag the docker image with a new tag.
 `docker build --tag docker101_springboot_api_v2 .`{{execute T1}}
 
+Now let's look at what docker images we have on our machine
+
+`docker image list`{{execute T1}}
+
+```
+Since docker images are self-contained and stand-alone you can have multiple versions of the same application and deploy them in minutes.  These differences can not only be your code but dependencies too.
+```
 
 With the new docker image let's issue the docker run command to get our container running.
 
@@ -17,6 +19,5 @@ With the new docker image let's issue the docker run command to get our containe
 
 Items to note on the docker run command.  We're designating a name on this container so it's easily recognizable.  
 
-Switch to T2
 
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
