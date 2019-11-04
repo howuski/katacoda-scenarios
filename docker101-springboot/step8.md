@@ -4,19 +4,19 @@ The container is running as its own entity.  If you look inside the container yo
 
 First let's look at the host operating file system:
 
-`cd /`{{execute T1}}
-`ls`{{execute T1}}
+`cd /`{{execute T2}}
+`ls`{{execute T2}}
 
 Note the directories present.
 
 
-`docker exec -it docker_springboot_api_ver2 ash`{{execute T1}}
+`docker exec -it katacoda_test_container ash`{{execute T2}}
 
-`cd /`{{execute T1}}
+`cd /`{{execute T2}}
+ 
+`ls`{{execute T2}}
 
-`ls`{{execute T1}}
-
-Notice that after you enter into the container there is a totally seperate file system.
+So to review what just happened -  You listed the root file directories on the machine.  Then with the docker exec command entered into the container and listed the root directories present in the container.  This demonstrates that the container is separate from the host machine.
 
 
 
