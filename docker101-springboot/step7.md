@@ -1,5 +1,5 @@
 
-```Docker images are immutable so if we make any new changes we create a new docker image.```
+>Docker images are immutable so if we make any new changes we create a new docker image.<
 
 
 As you click on the docker build command notice we're going to tag the docker image with a new tag.
@@ -9,7 +9,9 @@ Now let's look at what docker images we have on our machine
 
 `docker image list`{{execute T1}}
 
-```Since docker images are self-contained and stand-alone you can have multiple versions of the same application and deploy them in minutes.  These differences can not only be your code but dependencies too.```
+We now have two versions of the hello world application that are totally seperate from each other.
+
+>Since docker images are self-contained and stand-alone you can have multiple versions of the same application and deploy them in minutes.  These differences can not only be your code but dependencies too.<
 
 With the new docker image let's issue the docker run command to get our container up and running.
 
