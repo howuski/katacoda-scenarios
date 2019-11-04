@@ -10,10 +10,9 @@ Let's see what files we have:
 
 `ls`{{execute T1}}
 
-Inside an editor please change the HelloController.java file changing the return from Hello World to "Hello World, This has changed".
+Using an editor (vi, vim or nano) please change the HelloController.java file changing the return data from "Hello World" to "Hello World, This has changed".
 
-You can use nano or vi within the terminal window.
-Make sure you save your changes!
+**Make sure you save your changes!**
 
 After you have made your changes you can check to see if they have been saved:
 
@@ -23,11 +22,9 @@ Once you have confirmed the changes now we have to rebuild the java jar to incor
 
 `cd ~/docker-springboot-hello-world/ && gradle clean build`{{execute T1}}
 
-The jar has been rebuilt now let's put it in a container.
+The jar has been recompiled now let's put it in a docker image.
 
-``` 
-Remember docker images are immutable so if we make any new changes we create a new docker image.
-```
+
 
 
 
