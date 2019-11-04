@@ -10,8 +10,10 @@ First let's look at the host operating file system:
 Note the directories present.
 
 
-`docker exec -it docker_springboot_api_ver2 ash'{{execute T1}}
+`docker exec -it docker_springboot_api_ver2 ash`{{execute T1}}
+
 `cd /`{{execute T1}}
+
 `ls`{{execute T1}}
 
 Notice that after you enter into the container there is a totally seperate file system.
