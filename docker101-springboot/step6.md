@@ -1,6 +1,6 @@
 
 
-After deploying our container lets see what we need to do to change some code.  Remember a container is immutable therefore to change code we'll need to create another docker image after we build the new java code.
+After deploying our container lets see what we need to do to make some changes to the code. Remember a container is immutable therefore we'll need to create a new docker image after we've made changes to your jar file.
 
 Change the directory back back to where we stored our java code:
 
@@ -10,7 +10,7 @@ Let's see what files we have:
 
 `ls`{{execute T1}}
 
-Using an editor (vi, vim or nano) please change the HelloController.java file changing the return data from "Hello World" to "Hello World, This has changed".
+Using an editor (vi, vim or nano) please eidt the HelloController.java file changing the return data from "Hello World" to "Hello World, This has changed".
 
 **Make sure you save your changes!**
 

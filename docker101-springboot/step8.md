@@ -7,7 +7,9 @@ First let's look at the host operating file system:
 `cd /`{{execute T2}}
 
 `ls`{{execute T2}}
-Looks like a pretty standard version of Linux.  Let's put a unique file on root.
+Looks like a pretty standard version of Linux.  
+
+Let's put a unique file on the root of this file system.
 
 `touch myfile`{{execute T2}}
 
@@ -21,7 +23,9 @@ Also look at the processes running on the host machine:
 
 >Take note of the PIDs and applications running on the host system.
 
-So now let's see what's on the file system within the container:
+So now let's see what's on the file system within the container.
+
+Enter the container with the docker exec command:
 
 `docker exec -it katacoda_test_container ash`{{execute T2}}
 
@@ -35,13 +39,13 @@ Go to the root of the file system and list the contents:
 
 Notice our myfile file is not present.  The container's file system is separate from the system host.  
 
->An important concept of containers is that the container and data written to that container is ephemeral.  Any data in that container is lost when the container is deleted.<
+>An important concept of containers is that the container and data written to that container is ephemeral.  Any data in that container is lost when the container is deleted.
 
-Let's look at the processes:
+Let's look at the processes within the container:
 
 `ps`{{execute T2}}
 
->Totally isolated PIDs and processes running in the container.<
+The PIDs and processes running in the container are unique to the container.
 
 Exit from the container:
 
