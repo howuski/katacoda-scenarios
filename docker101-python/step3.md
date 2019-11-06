@@ -26,7 +26,7 @@ Now it's time to build our docker image:
 >On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.  All this is done by the container runtime engine.  In our case it's docker.  Like cars there are many container runtime engines.  All from different companies but they do the same thing.
 
 
->_Container _runtime _engine - is responsible for all parts of building and running a container.
+>_Container_ _runtime_ _engine_ - is responsible for all parts of building and running a container.
 
 
 >When the image build is completed you should see a cursor by a dollar sign. 
