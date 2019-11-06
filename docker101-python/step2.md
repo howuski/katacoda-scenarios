@@ -1,6 +1,6 @@
 Now let's walk through building a docker image for our application.
 
->Remember a docker image is all the code and instructions you need to build a docker container bundled up into one concise package.  This is the process used to put all our code into that package.
+>A docker image is all the code and instructions you need to build a docker container bundled up into one concise package.  Buiding is the process used to put all our code into that package.
 
 
 We need to switch over to the directory that contains our files:
@@ -11,13 +11,15 @@ We need to switch over to the directory that contains our files:
 
 `docker image list`{{execute T1}}
   
->Take note that our docker101_image is not there - We haven't built it yet!
+>Notice that our docker101_image is not there - We haven't built it yet!
 
 Now it's time to build our docker image:  
 
 `docker build --tag docker101_python_api .`{{execute T1}}
 
->On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.
+>On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.  All this is done by the container runtime engine.  In our case it's docker.  Like cars there are many container runtime engines.  All from different companies but they do the same basic thing.
+
+>Container runtime engine - is resonsible for all parts of building and running a container that isn't actually running the program itself.
 
 >Now that docker is completed. Let's take another look at the docker image store and see what we have. 
 
