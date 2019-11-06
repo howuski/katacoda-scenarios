@@ -1,24 +1,31 @@
-Now we have our docker image - everything we need to create a container.  To make that docker image a container all you have to do is run it.
+Now let's walk through building a docker image for our application.
 
->A container is just a running docker image.
-
-Let's start our docker image and make it a container, run the following command: `docker run --publish 5000:5000 --name docker101_python_api docker101_python_api`{{execute T1}} 
-
->Let's break down this command:
-
-docker -- Letting the computer know we're talking to the docker application
-
-run -- telling the docker to "spin up" a docker image.
-
-publish -- expose a port so other programs can talk to this container
-
-name -- what do you want to name your container so you can find it later.
+>A docker image is all the code and instructions you need to build a docker container bundled up into one concise package.  Buiding is the process used to put all our code into that package.
 
 
-To view the running container: `docker ps`{{execute T2}}
+We need to switch over to the directory that contains our files:
 
-To view the application in browser and see the program running in your container: https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
+ `cd docker-python-hello-world`{{execute}}
 
-To stop the container: `docker stop docker101_python_api`{{execute T2}}
+>Let's take a look of what images are currently present.  
 
-Executing `docker ps` will not show the container created above now since it is in stopped state. To view the stopped containers, run: `docker ps -a`{{execute T2}}
+`docker image list`{{execute T1}}
+  
+>Notice that our docker101_image is not there - We haven't built it yet!
+
+Now it's time to build our docker image:  
+
+`docker build --tag docker101_python_api .`{{execute T1}}
+
+>On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.  All this is done by the container runtime engine.  In our case it's docker.  Like cars there are many container runtime engines.  All from different companies but they do the same basic thing.
+
+>Container runtime engine - is resonsible for all parts of building and running a container that isn't actually running the program itself.
+
+>Now that docker is completed. Let's take another look at the docker image store and see what we have. 
+
+`docker image list`{{execute T1}}  
+
+>Notice we now have a docker image named docker101_python_api.  We've taken a Hello World application, downloaded to our local machine and created a docker image.  Now it's time to actual run the application.
+
+To view the Docker file: `docker-python-hello-world/Dockerfile`{{open}}
+> The docker file is a list of detailed instructions on how to build a docker image.  This file is used by the docker runtime engine to put everything together.

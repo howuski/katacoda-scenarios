@@ -9,16 +9,20 @@
     },
     "steps": [
       {
-        "title": "Clone the application repository",
+        "title": "General Overview",
         "text": "step1.md"
       },
       {
-        "title": "Create Docker Image",
+        "title": "Clone the application repository",
         "text": "step2.md"
       },
       {
-        "title": "Create Docker Container",
+        "title": "Create Docker Image",
         "text": "step3.md"
+      },
+	  {
+        "title": "Create Docker Container",
+        "text": "step4.md"
       }
     ],
     "intro": {

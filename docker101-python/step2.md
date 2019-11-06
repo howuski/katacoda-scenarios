@@ -1,31 +1,26 @@
-Now let's walk through building a docker image for our application.
+Before we get started let's take a quick look at what all these windows are supposed to show us:
 
->A docker image is all the code and instructions you need to build a docker container bundled up into one concise package.  Buiding is the process used to put all our code into that package.
+The window you're reading will give you all the information necessary for the demo.  The small window to the right in the Katacoda Editor your file directory window.   To the right of the directory tile is directory view.  Click on something in the directory tile and the contents will show in the directory view. Below the directory tile and view is the Terminal where your commands will run.
+
+>Note:  You can enter commands directly into the terminal window if you desire.
 
 
-We need to switch over to the directory that contains our files:
+The first step is to clone the application repository from the Github public code repository. 
 
- `cd docker-python-hello-world`{{execute}}
+>An application repository is a server that stores a developer's code.  It allows multiple developers to work on the same code and controls the versioning of that code. Cloning is just the process of copying the code so you can make changes without changing the original copy.
+	
+## Task
 
->Let's take a look of what images are currently present.  
+Clone the source code repository for this application from Github with the following command:
 
-`docker image list`{{execute T1}}
-  
->Notice that our docker101_image is not there - We haven't built it yet!
+>Click on the code box below and it will be automatically executed in the terminal window to the right. When you execute a command you will get a checkmark indicating that command has been run.
 
-Now it's time to build our docker image:  
+`git clone https://github.com/highvelocityengineering/docker101-python.git docker-python-hello-world`{{execute}}
 
-`docker build --tag docker101_python_api .`{{execute T1}}
+Take note of the directory tile - a copy of the application repository (docker-python-hello-world) is now copied to your computer. If you expand the docker-python directory in the direcotry tile you will see a set of files that make up the Python Hello World application.
 
->On the right you'll see the docker engine packaging all the necessary software together and creating the docker image.  All this is done by the container runtime engine.  In our case it's docker.  Like cars there are many container runtime engines.  All from different companies but they do the same basic thing.
+To view all the files in terminal, run the command: `ls -l docker-python-hello-world/`{{execute}}.
 
->Container runtime engine - is resonsible for all parts of building and running a container that isn't actually running the program itself.
+To open a file in katacoda editor: `docker-python-hello-world/app.py`{{open}}  This is the python program we'll be running.
 
->Now that docker is completed. Let's take another look at the docker image store and see what we have. 
-
-`docker image list`{{execute T1}}  
-
->Notice we now have a docker image named docker101_python_api.  We've taken a Hello World application, downloaded to our local machine and created a docker image.  Now it's time to actual run the application.
-
-To view the Docker file: `docker-python-hello-world/Dockerfile`{{open}}
-> The docker file is a list of detailed instructions on how to build a docker image.  This file is used by the docker runtime engine to put everything together.
+>At this point you have the application code on your machine which will allow you to start building the docker container.
