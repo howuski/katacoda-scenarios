@@ -1,18 +1,18 @@
-Now we have our docker image - everything we need to create a container.  To make that docker image a container all you have to do is run it.
+Now we have our docker image.  To create a container all you need to do is run your docker image.
 
 >A container is just a running docker image.
 
-Let's start our docker image and make it a container, run the following command: `docker run --publish 5000:5000 --name docker101_python_api docker101_python_api`{{execute T1}} 
+Let's start our docker image, run the following command: `docker run --publish 5000:5000 --name docker101_python_api docker101_python_api`{{execute T1}} 
 
 >Let's break down this command:
 
-docker -- Letting the computer know we're talking to the docker application
+docker -- Letting the computer know you're talking to the docker application
 
-run -- telling the docker to "spin up" a docker image.
+run -- telling the docker to start the docker image.
 
-publish -- expose a port so other programs can talk to this container
+publish -- expose a communications port so other programs can talk to this container
 
-name -- what do you want to name your container so you can find it later.
+name -- User-definable name.  If you leave this blank docker will assign a random name which can sometimes be hard to find.
 
 
 To view the running container: `docker ps`{{execute T2}}
