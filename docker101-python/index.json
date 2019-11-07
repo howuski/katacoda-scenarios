@@ -2,7 +2,7 @@
   "title": "Docker 101 - Build a container running Python ",
   "description": "Build a simple docker container",
   "difficulty": "Beginner",
-  "time": "30 minutes",
+  "time": "10 minutes",
   "details": {
     "intro": {
       "courseData": "setup.sh"
@@ -13,7 +13,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Clone the application repository",
+        "title": "Clone the code repository",
         "text": "step2.md"
       },
       {
