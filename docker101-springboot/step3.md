@@ -8,7 +8,7 @@ Wait, how would `gradle` know how to build and package my application? The answe
 
 To view the package files created: `ls -l build/libs`{{execute}}
 
-Start the application: `java -jar build/libs/docker_springboot-hello-world.jar`{{execute}}
+Start the application: `java -jar build/libs/docker-springboot-hello-world.jar`{{execute}}
 
 To test if the application works locally, open a new terminal window and run `curl localhost:8080`{{execute T2}}
 
