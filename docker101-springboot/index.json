@@ -1,7 +1,7 @@
 {
   "title": "Docker 101 - Hello World in Java SpringBoot",
   "description": "Learn Docker with a simple Hello World apps in SpringBoot",
-  "difficulty": "Beginner",
+  "Intended Audience": "Developer",
   "time": "30 minutes",
   "details": {
     "intro": {
@@ -37,7 +37,7 @@
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Host/Container seperation",
         "text": "step8.md"
       },
       {
