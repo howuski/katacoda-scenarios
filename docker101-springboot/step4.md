@@ -8,4 +8,4 @@ To view the Docker file: `docker-springboot-hello-world/Dockerfile`{{open}}
 
 To view the docker image created: `docker images`{{execute T1}}
 
->Remember - A docker image is all the code and dependencies you need to run an application.  When you run a docker image it becomes a container.<
+>Remember - A docker image is all the code and dependencies you need to run an application.  When you run a docker image it becomes a container.
