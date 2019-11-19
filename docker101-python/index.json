@@ -23,7 +23,11 @@
 	  {
         "title": "Create Docker Container",
         "text": "step4.md"
-      }
+      },
+	  {
+	    "title": "Wrapping it up",
+		"text": "step5.md"
+	  }
     ],
     "intro": {
       "text": "intro.md"
